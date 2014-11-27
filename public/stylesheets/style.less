@@ -1,0 +1,254 @@
+
+/*RESET*/
+/* apply a natural box layout model to all elements */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,
+.clearfix:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix {
+  *zoom: 1;
+}
+
+/*RESET END*/
+
+html,
+body{
+  margin: 0;
+  padding: 0;
+  min-width: 1024px;
+  height: 100%;
+  background-color: #F2F2F2;
+  color: #fff;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+/* Start Header */
+
+header{
+  margin-top: 50px;
+  height: 90px;
+  background-color: #000;
+  text-transform: uppercase;
+}
+
+#menu ul {
+  float: right;
+}
+
+#menu ul li{
+  float: left;
+  padding: 30px;
+  list-style: none;
+  font-size: 26px;
+}
+
+#menu ul li:hover, .active{
+  background-color: #FF0000;
+}
+
+#menu ul li a{
+  text-decoration: none;
+  color: #FFF;
+}
+
+#main {
+  color: black;
+}
+
+/* End Header */
+
+#box-container {
+  width: 700px;
+  height: 400px;
+  margin: 0 auto;
+  margin-top: 120px;
+}
+
+.category-box {
+  border: 1px solid #000;
+  border-radius: 10px;
+  display: block;
+  width: 60px;
+  text-align: center;
+  float: left;
+  margin: 10px;
+}
+
+/* Start Forms */
+
+form.search {
+  margin-top: 50px;
+  text-align: center;
+}
+
+form.search input.search-text {
+  border: 1px solid #808080;
+  width: 350px;
+  height: 40px;
+}
+
+form.search input.search-button {
+  -webkit-appearance: none;
+  text-transform: uppercase;
+  width: 100px;
+  height: 40px;
+  background-color: #FF0000;
+  color: #FFF;
+  font-size: 14px;
+  border: 0;
+}
+
+.reg-log-cont {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.reg-log-reg, .reg-log-log {
+  padding: 5px;
+  border: 3px solid #000;
+  display: inline-table;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  min-height: 600px;
+}
+
+.reg-log-log {
+  width: 35%;
+}
+
+.reg-log-log form{
+  margin: 20px;
+}
+
+.reg-log-reg {
+  width: 50%;
+}
+
+.reg-log-reg form {
+  margin: 20px;
+  text-align: left;
+}
+
+.reg-log-title {
+  border-bottom: 3px solid #000;
+  width: 100%;
+  line-height: 45px;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+  border: 3px solid #000;
+  width: 180px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 30px;
+  font-size: 14px;
+}
+
+
+#register-form input[name="name"], #register-form input[name="lastName"] {
+  width: 250px;
+}
+
+
+#register-form input[name="email"] {
+  width: 300px;
+}
+
+input[type="submit"] {
+  border: 3px solid #000;
+  border-radius: 10px;
+  padding: 7px 15px 7px 15px;
+  background-color: lightgray;
+  width: 150px;
+  height: 40px;
+  font-size: 15px;
+}
+
+
+#name-last-cont {
+  float: left;
+  width: 100%;
+}
+
+.name, .last-name {
+  float: left;
+  text-align: left;
+}
+
+.name {
+  margin-right: 50px;
+}
+
+.name label, .last-name label {
+}
+
+.no-bullets {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+.remember-checkbox-cont {
+  margin-top: 25px;
+}
+
+#btn-login-submit {
+  margin-top: 25px;
+}
+
+form .input-full-width {
+  width: 100%;
+}
+
+form label.label-floating-left {
+  float: left;
+}
+/* End Forms */
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label span{
+  display: inline-block;
+  border: 3px solid #000;
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+  border-radius: 5px;
+}
+
+input[type="checkbox"]:checked + label span {
+  background: url('../icons/checkmark.png') 0 0px no-repeat;
+}
+
+.margin-top-30px{
+  margin-top: 30px;
+}

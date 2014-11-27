@@ -1,0 +1,18 @@
+{
+    "siteName": "La Baulera",
+    "version": 1.0,
+    "database": {
+        "uri": "mongodb://localhost/labaulera"
+    },
+    "endpoints": {
+        "users": "/users",
+        "register": "/register",
+        "login": "/login",
+        "sell": "/sell",
+        "contact": "/contact"
+    },
+    "message": {
+        "userSaved": "The user was correctly registered, so, Welcome ",
+        "passwordError": "Both password should match"
+    }
+}
